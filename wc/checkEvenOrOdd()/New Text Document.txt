@@ -1,0 +1,16 @@
+function checkEvenOrOdd() {
+    const number = parseFloat(prompt("Please enter a number:"));
+    
+    if (isNaN(number)) {
+        alert("That's not a valid number. Please try again.");
+        return;
+    }
+    
+    if (number % 2 === 0) {
+        alert(number + " is an even number.");
+    } else {
+        alert(number + " is an odd number.");
+    }
+}
+
+checkEvenOrOdd();
